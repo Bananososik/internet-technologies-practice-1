@@ -17,6 +17,26 @@
 <hr>
 <main>
 <h1>Список игровых консолей</h1>
+<details open>
+    <summary>График</summary>
+    <form id="graph-settings" action="table.html" method="get">
+    <h2>Значение по оси OX</h2>
+    <label><input type="radio" name="axis-x" value="manufacturer"> Производитель</label><br>
+    <label><input type="radio" name="axis-x" value="type"> Тип</label><br>
+    <label><input type="radio" name="axis-x" value="generation"> Поколение</label><br>
+    <label><input type="radio" name="axis-x" value="year"> Год выпуска</label>
+    <h2>Значение по оси OY</h2>
+    <label><input type="checkbox" name="min-year"> Минимальный год выпуска</label><br>
+    <label><input type="checkbox" name="max-year"> Максимальный год выпуска</label><br>
+    <label><input type="checkbox" name="count"> Количество консолей</label>
+    <br>
+    <label><input type="checkbox" name="min-price-2025"> Минимальная цена в долларах 2025 года</label><br>
+    <label><input type="checkbox" name="max-price-2025"> Максимальная цена в долларах 2025 года</label><br>
+    <label><input type="checkbox" name="avg-price-2025"> Средняя цена в долларах 2025 года</label>
+    <p><button type="button">Построить</button></p>
+    <p>Здесь будет график</p>
+    </form>
+</details>
 <div>
 <table border="1" cellpadding="5" cellspacing="0">
 <caption>Игровые консоли: характеристики и стартовые цены</caption>
