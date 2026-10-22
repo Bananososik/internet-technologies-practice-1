@@ -37,6 +37,29 @@
     <p>Здесь будет график</p>
     </form>
 </details>
+<details open>
+    <summary>Фильтр</summary>
+    <form id="filter-settings" action="table.html" method="get">
+    <p><label>Название: <input type="text" size="25" name="title"></label></p>
+    <p><label>Производитель: <input type="text" size="25" name="manufacturer"></label></p>
+    <p><label>Тип: <input type="text" size="25" name="type"></label></p>
+    <p><label>Поколение: <input type="text" size="25" name="generation"></label></p>
+    <p><label>Год выпуска: от <input type="number" min="1970" max="2100" step="1" name="year-from"></label> <label>до <input type="number" min="1970" max="2100" step="1" name="year-to"></label></p>
+    <p><label>Тип носителя: <input type="text" size="25" name="media"></label></p>
+    <p><label>Стартовая цена, $ США: от <input type="number" name="price-from" min="0" step="0.01"></label> <label>до <input type="number" name="price-to" min="0" step="0.01"></label></p>
+    <p><label>Цена в долларах 2025 года: от <input type="number" name="price-2025-from" min="0" step="1"></label> <label>до <input type="number" name="price-2025-to" min="0" step="1"></label></p>
+    <p><button type="button">Найти</button></p>
+    </form>
+</details>
+<details open>
+    <summary>Сортировка</summary>
+    <form id="sort-settings" action="table.html" method="get">
+    <p><label>Первый уровень: <select name="sort-1"><option value="">Нет</option><option value="0">Название</option><option value="1">Производитель</option><option value="2">Тип</option><option value="3">Поколение</option><option value="4">Год выпуска</option><option value="5">Тип носителя</option><option value="6">Комплектация</option><option value="7">Год цены</option><option value="8">Стартовая цена, $ США</option><option value="9">Цена в долларах 2025 года, ≈ $</option></select></label> <label>по убыванию? <input type="checkbox" name="descending-1"></label></p>
+    <p><label>Второй уровень: <select name="sort-2"><option value="">Нет</option><option value="0">Название</option><option value="1">Производитель</option><option value="2">Тип</option><option value="3">Поколение</option><option value="4">Год выпуска</option><option value="5">Тип носителя</option><option value="6">Комплектация</option><option value="7">Год цены</option><option value="8">Стартовая цена, $ США</option><option value="9">Цена в долларах 2025 года, ≈ $</option></select></label> <label>по убыванию? <input type="checkbox" name="descending-2"></label></p>
+    <p><label>Третий уровень: <select name="sort-3"><option value="">Нет</option><option value="0">Название</option><option value="1">Производитель</option><option value="2">Тип</option><option value="3">Поколение</option><option value="4">Год выпуска</option><option value="5">Тип носителя</option><option value="6">Комплектация</option><option value="7">Год цены</option><option value="8">Стартовая цена, $ США</option><option value="9">Цена в долларах 2025 года, ≈ $</option></select></label> <label>по убыванию? <input type="checkbox" name="descending-3"></label></p>
+    <p><button type="button">Сортировать</button></p>
+    </form>
+</details>
 <div>
 <table border="1" cellpadding="5" cellspacing="0">
 <caption>Игровые консоли: характеристики и стартовые цены</caption>
